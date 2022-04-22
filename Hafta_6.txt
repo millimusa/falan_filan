@@ -1,0 +1,33 @@
+
+public class Hafta_6 {
+
+	public static void main(String[] args) {
+		
+		Ogrenci ogr1 = new Ogrenci();
+		Ogrenci ogr2 = new Ogrenci("Ayþe Türk", 21);
+		Ogrenci ogr3 = new Ogrenci("Ahmet Yýldýz", 20);
+		
+		
+		ogr1.setOgrenciIsim("Yavuz Yýlmaz");
+		ogr1.setOgrenciYas(22);
+		
+		
+		Ogrenci.Yazdir(ogr1);
+		Ogrenci.Yazdir(ogr2);
+		Ogrenci.Yazdir(ogr3);
+		
+		Ogrenci.OgrenciSayisiYazdir();
+		
+		Hafta_6 hft = new Hafta_6();
+		hft.BilgiYazdir();
+
+	}
+	
+	public void BilgiYazdir()
+	{
+		System.out.println("Milli Savunma Üniversitesi "
+				+ "Milli Savunma Üniversitesi Milli Savunma Üniversitesi "
+				+ "Milli Savunma Üniversitesi Milli Savunma Üniversitesi");
+	}
+
+}

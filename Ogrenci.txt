@@ -1,0 +1,52 @@
+
+public class Ogrenci {
+	
+	private String ogrenciIsim;
+	private int ogrenciYas;
+	private static int ogrenciSayisi = 0;
+	
+	public Ogrenci()
+	{
+		ogrenciSayisi++;
+	}
+	
+	public Ogrenci(String isim, int yas)
+	{
+		this.ogrenciIsim = isim;
+		this.ogrenciYas = yas;
+		ogrenciSayisi++;
+	}
+	
+	public String getOgrenciIsim()
+	{
+		return this.ogrenciIsim;
+	}
+	
+	public void setOgrenciIsim(String isim)
+	{
+		this.ogrenciIsim = isim;
+	}
+	
+	public int getOgrenciYas()
+	{
+		return this.ogrenciYas;
+	}
+	
+	public void setOgrenciYas(int yas)
+	{
+		this.ogrenciYas = yas;
+	}
+	
+	
+	public static void Yazdir(Ogrenci ogr1)
+	{
+		System.out.println(ogr1.getOgrenciIsim() + " isimli öðrencinin okulu: Deniz Harp Okulu'dur.");
+	}
+	
+	
+	public static void OgrenciSayisiYazdir()
+	{
+		System.out.println("Öðrenci Sayýsý: " + ogrenciSayisi);
+	}
+	
+}
